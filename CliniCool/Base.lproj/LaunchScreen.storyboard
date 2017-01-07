@@ -1,27 +1,67 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="dSs-UK-W0X">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="EHf-IW-A2E">
+        <scene sceneID="5zf-wf-2Lx">
             <objects>
-                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                <viewController id="dSs-UK-W0X" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
-                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                        <viewControllerLayoutGuide type="top" id="HKh-k4-yvS"/>
+                        <viewControllerLayoutGuide type="bottom" id="bQU-RP-nDf"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                    <view key="view" contentMode="scaleToFill" id="nuO-6m-O3h">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CliniCool" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ap-XZ-5f6">
+                                <rect key="frame" x="58" y="54" width="484" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="484" id="mpI-YH-4c4"/>
+                                    <constraint firstAttribute="height" constant="96" id="y0i-xO-3xp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="54"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.76643318969999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by Ken Baer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Pu-4Y-nqm">
+                                <rect key="frame" x="163" y="513" width="274" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="OK7-Y0-yCk"/>
+                                    <constraint firstAttribute="width" constant="274" id="eRy-eT-sjk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.76643318969999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Kenphoto" translatesAutoresizingMaskIntoConstraints="NO" id="NMc-tl-Hgd">
+                                <rect key="frame" x="178" y="158" width="244" height="328"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="244" id="MFg-pm-eOE"/>
+                                    <constraint firstAttribute="height" constant="328" id="YgE-LM-GyP"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1ap-XZ-5f6" firstAttribute="centerX" secondItem="nuO-6m-O3h" secondAttribute="centerX" id="Jwr-Ne-vhK"/>
+                            <constraint firstItem="5Pu-4Y-nqm" firstAttribute="centerX" secondItem="nuO-6m-O3h" secondAttribute="centerX" id="Sx6-2M-A6j"/>
+                            <constraint firstItem="NMc-tl-Hgd" firstAttribute="centerX" secondItem="nuO-6m-O3h" secondAttribute="centerX" id="UGy-eN-TMk"/>
+                            <constraint firstItem="1ap-XZ-5f6" firstAttribute="top" secondItem="HKh-k4-yvS" secondAttribute="bottom" constant="34" id="jag-HG-E90"/>
+                            <constraint firstItem="5Pu-4Y-nqm" firstAttribute="top" secondItem="NMc-tl-Hgd" secondAttribute="bottom" constant="27" id="uag-QR-ZSc"/>
+                            <constraint firstItem="NMc-tl-Hgd" firstAttribute="top" secondItem="1ap-XZ-5f6" secondAttribute="bottom" constant="8" id="zUu-JQ-y1B"/>
+                        </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iyn-zN-e5g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="68" y="350"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Kenphoto" width="84" height="120"/>
+    </resources>
 </document>

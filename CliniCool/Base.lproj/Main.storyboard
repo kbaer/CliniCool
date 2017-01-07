@@ -1,25 +1,224 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="c0F-cH-2bl">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--CliniCool-->
+        <scene sceneID="scV-LJ-82L">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                <collectionViewController id="Vqt-tB-oH2" customClass="ClinicsViewController" customModule="CliniCool" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" id="xak-9D-CPU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" red="0.73333334920000004" green="0.81176471709999998" blue="0.92941176889999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <inset key="scrollIndicatorInsets" minX="20" minY="20" maxX="20" maxY="20"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Qec-mj-K1s">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ClinicCell" id="cQy-us-ARu" customClass="ClinicCell" customModule="CliniCool" customModuleProvider="target">
+                                <rect key="frame" x="62" y="0.0" width="252" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="252" height="64"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is Preferred: Yes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Box-Kp-66b">
+                                            <rect key="frame" x="24" y="35" width="210" height="14"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="14" id="7Wt-o1-fzL"/>
+                                                <constraint firstAttribute="width" constant="210" id="avt-9W-HgF"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="avt-9W-HgF"/>
+                                                </mask>
+                                            </variation>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clinic Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GiW-Fh-1rX">
+                                            <rect key="frame" x="15" y="8" width="222" height="24"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="222" id="NpX-bN-729"/>
+                                                <constraint firstAttribute="height" constant="24" id="wst-Ww-5Vl"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="wst-Ww-5Vl"/>
+                                                </mask>
+                                            </variation>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <color key="backgroundColor" red="0.074509803921568626" green="0.15686274509803921" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailingMargin" secondItem="Box-Kp-66b" secondAttribute="trailing" constant="10" id="0Ob-0j-k2M"/>
+                                    <constraint firstItem="GiW-Fh-1rX" firstAttribute="top" secondItem="cQy-us-ARu" secondAttribute="topMargin" id="MIv-4z-ayh"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="GiW-Fh-1rX" secondAttribute="trailing" constant="7" id="N9G-xY-e4J"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="GiW-Fh-1rX" secondAttribute="bottom" constant="24" id="Pc7-m5-GJz"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="Box-Kp-66b" secondAttribute="bottom" constant="7" id="QuB-Ec-apN"/>
+                                    <constraint firstItem="Box-Kp-66b" firstAttribute="leading" secondItem="cQy-us-ARu" secondAttribute="leadingMargin" constant="16" id="dao-qN-L8r"/>
+                                    <constraint firstItem="GiW-Fh-1rX" firstAttribute="leading" secondItem="cQy-us-ARu" secondAttribute="leadingMargin" constant="7" id="foi-mx-ZLT"/>
+                                </constraints>
+                                <size key="customSize" width="252" height="64"/>
+                                <connections>
+                                    <outlet property="clinicName" destination="GiW-Fh-1rX" id="oZu-Np-UfM"/>
+                                    <outlet property="preferredString" destination="Box-Kp-66b" id="Ytc-oc-Bd7"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="Vqt-tB-oH2" id="d2l-Hy-FDp"/>
+                            <outlet property="delegate" destination="Vqt-tB-oH2" id="PRx-4l-3bm"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="CliniCool" id="29c-sb-wLm"/>
+                    <connections>
+                        <outlet property="collectionView" destination="xak-9D-CPU" id="CDX-uy-HRv"/>
+                        <segue destination="L0z-HU-ZQo" kind="push" identifier="ShowDetails" id="yuH-Sh-Onw"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="70E-bv-KMb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="896" y="-509"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7y3-nY-IOR">
+            <objects>
+                <navigationController id="c0F-cH-2bl" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="spb-WF-oWB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Vqt-tB-oH2" kind="relationship" relationship="rootViewController" id="7bG-8W-e2X"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FXv-pW-SDq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="218" y="-509"/>
+        </scene>
+        <!--Clinic Details-->
+        <scene sceneID="0U6-18-pMG">
+            <objects>
+                <viewController title="Clinic Details" id="L0z-HU-ZQo" customClass="ClinicDetailViewController" customModule="CliniCool" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aMi-mi-SlT"/>
+                        <viewControllerLayoutGuide type="bottom" id="0Br-zl-Ir6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LcU-4q-qC3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Address" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SPH-Sc-16g">
+                                <rect key="frame" x="20" y="108" width="560" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="OE4-RY-ROT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Location Distance: 3 Miles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6l-tI-4Ig">
+                                <rect key="frame" x="20" y="161" width="560" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="DVr-gI-wqU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TLd-vL-HGL">
+                                <rect key="frame" x="20" y="213" width="114" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="2EN-Ny-9QY"/>
+                                    <constraint firstAttribute="height" constant="27" id="2Q5-I3-e3x"/>
+                                </constraints>
+                                <state key="normal" title="See on Map">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggleMap" destination="L0z-HU-ZQo" eventType="touchUpInside" id="hO8-16-vOr"/>
+                                </connections>
+                            </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" rotateEnabled="NO" pitchEnabled="NO" showsUserLocation="YES" showsBuildings="NO" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sKW-ZP-sdC">
+                                <rect key="frame" x="20" y="266" width="560" height="314"/>
+                                <connections>
+                                    <outlet property="delegate" destination="L0z-HU-ZQo" id="zG4-yT-jwn"/>
+                                </connections>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Clinic Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I1J-Le-YxD">
+                                <rect key="frame" x="20" y="67" width="560" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="atj-b2-maF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.73333334920000004" green="0.81176471709999998" blue="0.92941176889999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TLd-vL-HGL" firstAttribute="top" secondItem="H6l-tI-4Ig" secondAttribute="bottom" constant="32" id="2au-5I-oyj"/>
+                            <constraint firstItem="H6l-tI-4Ig" firstAttribute="top" secondItem="SPH-Sc-16g" secondAttribute="bottom" constant="8" id="C36-Yu-pmm"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="sKW-ZP-sdC" secondAttribute="leading" id="EB0-58-bpB"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="H6l-tI-4Ig" secondAttribute="leading" id="IP8-ze-iiT"/>
+                            <constraint firstItem="I1J-Le-YxD" firstAttribute="top" secondItem="aMi-mi-SlT" secondAttribute="bottom" constant="3" id="L5j-Xf-2Xp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SPH-Sc-16g" secondAttribute="trailing" id="LT6-79-nqv"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="SPH-Sc-16g" secondAttribute="leading" id="MVi-Dv-dQb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="H6l-tI-4Ig" secondAttribute="trailing" id="NcY-rP-Cnt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="I1J-Le-YxD" secondAttribute="trailing" id="Swz-mV-m4o"/>
+                            <constraint firstItem="SPH-Sc-16g" firstAttribute="top" secondItem="I1J-Le-YxD" secondAttribute="bottom" constant="8" id="b6G-RH-tlw"/>
+                            <constraint firstItem="TLd-vL-HGL" firstAttribute="top" secondItem="aMi-mi-SlT" secondAttribute="bottom" constant="193" id="fEU-2g-YuW"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="TLd-vL-HGL" secondAttribute="leading" id="fRk-xB-2nJ"/>
+                            <constraint firstItem="0Br-zl-Ir6" firstAttribute="top" secondItem="sKW-ZP-sdC" secondAttribute="bottom" constant="20" id="pvX-lC-ULR"/>
+                            <constraint firstItem="sKW-ZP-sdC" firstAttribute="top" secondItem="TLd-vL-HGL" secondAttribute="bottom" constant="26" id="quL-tI-pUa"/>
+                            <constraint firstItem="sKW-ZP-sdC" firstAttribute="top" secondItem="TLd-vL-HGL" secondAttribute="top" constant="53" id="v6r-4i-oRy"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="I1J-Le-YxD" secondAttribute="leading" id="wTe-t1-h0C"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sKW-ZP-sdC" secondAttribute="trailing" id="yH0-Pz-Jbo"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="fEU-2g-YuW"/>
+                                <exclude reference="quL-tI-pUa"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Clinic Details" id="4u0-Wd-Y5R">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="P6c-Ry-U4Z">
+                            <connections>
+                                <action selector="done" destination="L0z-HU-ZQo" id="o6g-Yn-Cg1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="address" destination="SPH-Sc-16g" id="aVl-Y4-ob1"/>
+                        <outlet property="clinicName" destination="I1J-Le-YxD" id="qwK-qg-njb"/>
+                        <outlet property="distance" destination="H6l-tI-4Ig" id="GkN-0W-Q2s"/>
+                        <outlet property="mapButton" destination="TLd-vL-HGL" id="QNu-6k-oO7"/>
+                        <outlet property="mapView" destination="sKW-ZP-sdC" id="OCn-Lh-jfh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HgT-nJ-7Vg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1574" y="-509"/>
         </scene>
     </scenes>
 </document>

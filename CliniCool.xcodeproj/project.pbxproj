@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		715CBEEA1C88EFDA000C848D /* ClinicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715CBEE91C88EFDA000C848D /* ClinicCell.swift */; };
 		71E116571C86618200C94CB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E116561C86618200C94CB2 /* AppDelegate.swift */; };
-		71E116591C86618200C94CB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E116581C86618200C94CB2 /* ViewController.swift */; };
 		71E1165C1C86618200C94CB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71E1165A1C86618200C94CB2 /* Main.storyboard */; };
 		71E1165E1C86618200C94CB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71E1165D1C86618200C94CB2 /* Assets.xcassets */; };
 		71E116611C86618200C94CB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71E1165F1C86618200C94CB2 /* LaunchScreen.storyboard */; };
 		71E1166C1C86618200C94CB2 /* CliniCoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E1166B1C86618200C94CB2 /* CliniCoolTests.swift */; };
+		71E116781C87E3E300C94CB2 /* ClinicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E116771C87E3E300C94CB2 /* ClinicsViewController.swift */; };
+		71E1167A1C87E3F700C94CB2 /* ClinicDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E116791C87E3F700C94CB2 /* ClinicDetailViewController.swift */; };
+		71E1167E1C87E52200C94CB2 /* clinicList.json in Resources */ = {isa = PBXBuildFile; fileRef = 71E1167D1C87E52200C94CB2 /* clinicList.json */; };
+		71FCF9D51C8B7AF800483FB2 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FCF9D41C8B7AF800483FB2 /* KeychainWrapper.swift */; };
+		71FCF9D91C8B7CBB00483FB2 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FCF9D81C8B7CBB00483FB2 /* GlobalConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +31,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		252B90DAD8959DEB08DDD7DB /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		715CBEE91C88EFDA000C848D /* ClinicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClinicCell.swift; sourceTree = "<group>"; };
 		71E116531C86618200C94CB2 /* CliniCool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CliniCool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71E116561C86618200C94CB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		71E116581C86618200C94CB2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		71E1165B1C86618200C94CB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		71E1165D1C86618200C94CB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71E116601C86618200C94CB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,16 +42,15 @@
 		71E116671C86618200C94CB2 /* CliniCoolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CliniCoolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		71E1166B1C86618200C94CB2 /* CliniCoolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CliniCoolTests.swift; sourceTree = "<group>"; };
 		71E1166D1C86618200C94CB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71E116771C87E3E300C94CB2 /* ClinicsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClinicsViewController.swift; sourceTree = "<group>"; };
+		71E116791C87E3F700C94CB2 /* ClinicDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClinicDetailViewController.swift; sourceTree = "<group>"; };
+		71E1167D1C87E52200C94CB2 /* clinicList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = clinicList.json; sourceTree = "<group>"; };
+		71FCF9D41C8B7AF800483FB2 /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
+		71FCF9D81C8B7CBB00483FB2 /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
+		E11A294754D51BCF8D9F44D8 /* Pods_CliniCool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CliniCool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		71E116501C86618200C94CB2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		71E116641C86618200C94CB2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -56,12 +61,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E2FCBA9FB4E356830429C8B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E11A294754D51BCF8D9F44D8 /* Pods_CliniCool.framework */,
+				252B90DAD8959DEB08DDD7DB /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		71E1164A1C86618200C94CB2 = {
 			isa = PBXGroup;
 			children = (
 				71E116551C86618200C94CB2 /* CliniCool */,
 				71E1166A1C86618200C94CB2 /* CliniCoolTests */,
 				71E116541C86618200C94CB2 /* Products */,
+				3E2FCBA9FB4E356830429C8B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +92,16 @@
 		71E116551C86618200C94CB2 /* CliniCool */ = {
 			isa = PBXGroup;
 			children = (
-				71E116561C86618200C94CB2 /* AppDelegate.swift */,
-				71E116581C86618200C94CB2 /* ViewController.swift */,
 				71E1165A1C86618200C94CB2 /* Main.storyboard */,
+				71E116561C86618200C94CB2 /* AppDelegate.swift */,
+				71FCF9D81C8B7CBB00483FB2 /* GlobalConstants.swift */,
+				71E1167F1C87E58600C94CB2 /* View Controllers */,
+				71FCF9DC1C8CFF6C00483FB2 /* Views */,
 				71E1165D1C86618200C94CB2 /* Assets.xcassets */,
 				71E1165F1C86618200C94CB2 /* LaunchScreen.storyboard */,
 				71E116621C86618200C94CB2 /* Info.plist */,
+				71FCF9DB1C8CDDE400483FB2 /* Resources */,
+				71FCF9D71C8B7B1400483FB2 /* SwiftKeychainWrapper */,
 			);
 			path = CliniCool;
 			sourceTree = "<group>";
@@ -96,6 +115,39 @@
 			path = CliniCoolTests;
 			sourceTree = "<group>";
 		};
+		71E1167F1C87E58600C94CB2 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				71E116771C87E3E300C94CB2 /* ClinicsViewController.swift */,
+				71E116791C87E3F700C94CB2 /* ClinicDetailViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		71FCF9D71C8B7B1400483FB2 /* SwiftKeychainWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				71FCF9D41C8B7AF800483FB2 /* KeychainWrapper.swift */,
+			);
+			name = SwiftKeychainWrapper;
+			sourceTree = "<group>";
+		};
+		71FCF9DB1C8CDDE400483FB2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				71E1167D1C87E52200C94CB2 /* clinicList.json */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		71FCF9DC1C8CFF6C00483FB2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				715CBEE91C88EFDA000C848D /* ClinicCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -104,7 +156,6 @@
 			buildConfigurationList = 71E116701C86618200C94CB2 /* Build configuration list for PBXNativeTarget "CliniCool" */;
 			buildPhases = (
 				71E1164F1C86618200C94CB2 /* Sources */,
-				71E116501C86618200C94CB2 /* Frameworks */,
 				71E116511C86618200C94CB2 /* Resources */,
 			);
 			buildRules = (
@@ -141,14 +192,16 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = BaerCode;
 				TargetAttributes = {
 					71E116521C86618200C94CB2 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0810;
 					};
 					71E116661C86618200C94CB2 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0810;
 						TestTargetID = 71E116521C86618200C94CB2;
 					};
 				};
@@ -178,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71E116611C86618200C94CB2 /* LaunchScreen.storyboard in Resources */,
+				71E1167E1C87E52200C94CB2 /* clinicList.json in Resources */,
 				71E1165E1C86618200C94CB2 /* Assets.xcassets in Resources */,
 				71E1165C1C86618200C94CB2 /* Main.storyboard in Resources */,
 			);
@@ -197,8 +251,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71E116591C86618200C94CB2 /* ViewController.swift in Sources */,
+				71E1167A1C87E3F700C94CB2 /* ClinicDetailViewController.swift in Sources */,
+				71E116781C87E3E300C94CB2 /* ClinicsViewController.swift in Sources */,
 				71E116571C86618200C94CB2 /* AppDelegate.swift in Sources */,
+				71FCF9D51C8B7AF800483FB2 /* KeychainWrapper.swift in Sources */,
+				71FCF9D91C8B7CBB00483FB2 /* GlobalConstants.swift in Sources */,
+				715CBEEA1C88EFDA000C848D /* ClinicCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,8 +311,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -298,8 +358,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -318,6 +380,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -331,6 +394,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.baercode.CliniCool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -342,6 +406,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.baercode.CliniCool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -353,6 +418,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.baercode.CliniCoolTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CliniCool.app/CliniCool";
 			};
 			name = Debug;
@@ -365,6 +431,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.baercode.CliniCoolTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CliniCool.app/CliniCool";
 			};
 			name = Release;
@@ -388,6 +455,7 @@
 				71E116721C86618200C94CB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		71E116731C86618200C94CB2 /* Build configuration list for PBXNativeTarget "CliniCoolTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +464,7 @@
 				71E116751C86618200C94CB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="c0F-cH-2bl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="c0F-cH-2bl">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -27,7 +27,7 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ClinicCell" id="cQy-us-ARu" customClass="ClinicCell" customModule="CliniCool" customModuleProvider="target">
-                                <rect key="frame" x="62" y="0.0" width="252" height="64"/>
+                                <rect key="frame" x="61.5" y="0.0" width="252" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="252" height="64"/>
@@ -90,7 +90,7 @@
                     <navigationItem key="navigationItem" title="CliniCool" id="29c-sb-wLm"/>
                     <connections>
                         <outlet property="collectionView" destination="xak-9D-CPU" id="CDX-uy-HRv"/>
-                        <segue destination="L0z-HU-ZQo" kind="push" identifier="ShowDetails" id="yuH-Sh-Onw"/>
+                        <segue destination="L0z-HU-ZQo" kind="show" identifier="ShowDetails" id="yuH-Sh-Onw"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="70E-bv-KMb" userLabel="First Responder" sceneMemberID="firstResponder"/>

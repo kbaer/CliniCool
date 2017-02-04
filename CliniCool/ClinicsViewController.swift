@@ -13,7 +13,7 @@ import UIKit
 class ClinicsViewController : UICollectionViewController {
     
     let insets: UIEdgeInsets! = UIEdgeInsets(top: 20.0, left: 20.0, bottom: 20.0, right: 20.0)
-    var clinicData: [NSDictionary]?
+    var clinicData: [[String:AnyObject]]?
     var screenWidth: CGFloat = 0
     
     required init?(coder aDecoder: NSCoder) {
@@ -25,7 +25,7 @@ class ClinicsViewController : UICollectionViewController {
         clinicData = nil
         
         // load saved Clinic List array from the keychain
-        if let clinicArray: Array? = KeychainWrapper.objectForKey(GlobalConstants.clinicListKey) as? [[String:AnyObject]] {
+        if let clinicArray: [[String : AnyObject]] = KeychainWrapper.objectForKey(GlobalConstants.clinicListKey) as? [[String:AnyObject]] {
             // show it in the Console
             print("Stored Clinic Array = \(clinicArray)" as Any)
             // remove it so we can save a new one
@@ -50,11 +50,11 @@ class ClinicsViewController : UICollectionViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let clinic: NSDictionary? = sender as? NSDictionary else {
+        guard let clinic: [String : AnyObject] = sender as? [String:AnyObject] else {
             return
         }
-        if let clinicDetailController: ClinicDetailViewController? = segue.destination as? ClinicDetailViewController {
-            clinicDetailController?.clinic = clinic
+        if let clinicDetailController: ClinicDetailViewController = segue.destination as? ClinicDetailViewController {
+            clinicDetailController.clinic = clinic
         }
     }
 
@@ -68,9 +68,9 @@ class ClinicsViewController : UICollectionViewController {
             do {
                 let jsonData = try Data(contentsOf: URL(fileURLWithPath: path), options: NSData.ReadingOptions.mappedIfSafe)
                 do {
-                    if let data = try JSONSerialization.jsonObject(with: jsonData, options: JSONSerialization.ReadingOptions.mutableContainers) as? [NSDictionary] {
-                        clinicData = data[0]["recommendations"] as? [NSDictionary]
-                        for clinic: NSDictionary in clinicData! {
+                    if let data = try JSONSerialization.jsonObject(with: jsonData, options: JSONSerialization.ReadingOptions.mutableContainers) as? [[String : AnyObject]] {
+                        clinicData = data[0]["recommendations"] as? [Dictionary]
+                        for clinic: Dictionary in clinicData! {
                             var id: AnyObject?
                             if clinic["id"] == nil{
                                 id = clinic["providerId"]
@@ -80,7 +80,7 @@ class ClinicsViewController : UICollectionViewController {
                             }
                             
                             if id != nil {
-                                let clinicItem: NSDictionary! =
+                                let clinicItem: Dictionary! =
                                     ["name" : clinic["name"]!,
                                      "id" : id as! String]
                                 clinicList.add(clinicItem)
@@ -124,7 +124,7 @@ class ClinicsViewController : UICollectionViewController {
             
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ClinicCell", for: indexPath) as! ClinicCell
         
-        if let clinic: NSDictionary? = clinicData![indexPath.row] {
+        if let clinic: [String : AnyObject]? = clinicData![indexPath.row] {
             cell.clinicName.text = clinic!["name"] as? String
             if let preferredState: Bool? = clinic!["preferred"] as? Bool{
                 if preferredState == true{

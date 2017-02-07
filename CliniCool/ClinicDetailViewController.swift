@@ -108,7 +108,7 @@ class ClinicDetailViewController : UIViewController, MKMapViewDelegate {
     
     @IBAction func done() {
         
-        self.navigationController?.popViewController(animated: true)         
+        _ = self.navigationController?.popViewController(animated: true)
     }
     
 }

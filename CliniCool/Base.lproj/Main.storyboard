@@ -125,8 +125,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Address" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SPH-Sc-16g">
-                                <rect key="frame" x="20" y="108" width="560" height="45"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SPH-Sc-16g">
+                                <rect key="frame" x="20" y="108" width="339" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="OE4-RY-ROT"/>
                                 </constraints>
@@ -134,8 +134,8 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Location Distance: 3 Miles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6l-tI-4Ig">
-                                <rect key="frame" x="20" y="161" width="560" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location Distance: 3 Miles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6l-tI-4Ig">
+                                <rect key="frame" x="20" y="161" width="339" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="DVr-gI-wqU"/>
                                 </constraints>
@@ -143,7 +143,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TLd-vL-HGL">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TLd-vL-HGL">
                                 <rect key="frame" x="20" y="213" width="114" height="27"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="114" id="2EN-Ny-9QY"/>
@@ -156,14 +156,14 @@
                                     <action selector="toggleMap" destination="L0z-HU-ZQo" eventType="touchUpInside" id="hO8-16-vOr"/>
                                 </connections>
                             </button>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" rotateEnabled="NO" pitchEnabled="NO" showsUserLocation="YES" showsBuildings="NO" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sKW-ZP-sdC">
-                                <rect key="frame" x="20" y="266" width="560" height="314"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" pitchEnabled="NO" showsUserLocation="YES" showsBuildings="NO" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sKW-ZP-sdC">
+                                <rect key="frame" x="20" y="266" width="339" height="314"/>
                                 <connections>
                                     <outlet property="delegate" destination="L0z-HU-ZQo" id="zG4-yT-jwn"/>
                                 </connections>
                             </mapView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Clinic Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I1J-Le-YxD">
-                                <rect key="frame" x="20" y="67" width="560" height="33"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clinic Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I1J-Le-YxD">
+                                <rect key="frame" x="20" y="67" width="339" height="33"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="33" id="atj-b2-maF"/>
                                 </constraints>
@@ -176,20 +176,20 @@
                         <constraints>
                             <constraint firstItem="TLd-vL-HGL" firstAttribute="top" secondItem="H6l-tI-4Ig" secondAttribute="bottom" constant="32" id="2au-5I-oyj"/>
                             <constraint firstItem="H6l-tI-4Ig" firstAttribute="top" secondItem="SPH-Sc-16g" secondAttribute="bottom" constant="8" id="C36-Yu-pmm"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="sKW-ZP-sdC" secondAttribute="leading" id="EB0-58-bpB"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="H6l-tI-4Ig" secondAttribute="leading" id="IP8-ze-iiT"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="sKW-ZP-sdC" secondAttribute="leading" constant="-4" id="EB0-58-bpB"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="H6l-tI-4Ig" secondAttribute="leading" constant="-4" id="IP8-ze-iiT"/>
                             <constraint firstItem="I1J-Le-YxD" firstAttribute="top" secondItem="aMi-mi-SlT" secondAttribute="bottom" constant="3" id="L5j-Xf-2Xp"/>
                             <constraint firstAttribute="trailingMargin" secondItem="SPH-Sc-16g" secondAttribute="trailing" id="LT6-79-nqv"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="SPH-Sc-16g" secondAttribute="leading" id="MVi-Dv-dQb"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="SPH-Sc-16g" secondAttribute="leading" constant="-4" id="MVi-Dv-dQb"/>
                             <constraint firstAttribute="trailingMargin" secondItem="H6l-tI-4Ig" secondAttribute="trailing" id="NcY-rP-Cnt"/>
                             <constraint firstAttribute="trailingMargin" secondItem="I1J-Le-YxD" secondAttribute="trailing" id="Swz-mV-m4o"/>
                             <constraint firstItem="SPH-Sc-16g" firstAttribute="top" secondItem="I1J-Le-YxD" secondAttribute="bottom" constant="8" id="b6G-RH-tlw"/>
                             <constraint firstItem="TLd-vL-HGL" firstAttribute="top" secondItem="aMi-mi-SlT" secondAttribute="bottom" constant="193" id="fEU-2g-YuW"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="TLd-vL-HGL" secondAttribute="leading" id="fRk-xB-2nJ"/>
-                            <constraint firstItem="0Br-zl-Ir6" firstAttribute="top" secondItem="sKW-ZP-sdC" secondAttribute="bottom" constant="20" id="pvX-lC-ULR"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="TLd-vL-HGL" secondAttribute="leading" constant="-4" id="fRk-xB-2nJ"/>
+                            <constraint firstItem="0Br-zl-Ir6" firstAttribute="top" secondItem="sKW-ZP-sdC" secondAttribute="bottom" constant="87" id="pvX-lC-ULR"/>
                             <constraint firstItem="sKW-ZP-sdC" firstAttribute="top" secondItem="TLd-vL-HGL" secondAttribute="bottom" constant="26" id="quL-tI-pUa"/>
                             <constraint firstItem="sKW-ZP-sdC" firstAttribute="top" secondItem="TLd-vL-HGL" secondAttribute="top" constant="53" id="v6r-4i-oRy"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="I1J-Le-YxD" secondAttribute="leading" id="wTe-t1-h0C"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="I1J-Le-YxD" secondAttribute="leading" constant="-4" id="wTe-t1-h0C"/>
                             <constraint firstAttribute="trailingMargin" secondItem="sKW-ZP-sdC" secondAttribute="trailing" id="yH0-Pz-Jbo"/>
                         </constraints>
                         <variation key="default">
@@ -218,7 +218,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HgT-nJ-7Vg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1574" y="-509"/>
+            <point key="canvasLocation" x="1573.5" y="-509.5"/>
         </scene>
     </scenes>
 </document>

@@ -29,8 +29,9 @@ class ClinicsViewController : UICollectionViewController {
             // show it in the Console
             print("Stored Clinic Array = \(clinicArray)" as Any)
             // remove it so we can save a new one
-            KeychainWrapper.removeObjectForKey(GlobalConstants.clinicListKey)
-            print("Clinic List removed from Keychain")
+            if KeychainWrapper.removeObjectForKey(GlobalConstants.clinicListKey) {
+                print("Clinic List removed from Keychain")
+            }
         }
         
         self.screenWidth = self.view.frame.size.width
@@ -98,7 +99,7 @@ class ClinicsViewController : UICollectionViewController {
         
         if clinicList.count > 0 {
             
-            KeychainWrapper.setObject(clinicList, forKey:GlobalConstants.clinicListKey)
+            _ = KeychainWrapper.setObject(clinicList, forKey:GlobalConstants.clinicListKey)
         }
         
     }
@@ -121,12 +122,14 @@ class ClinicsViewController : UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView,
         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-            
+        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ClinicCell", for: indexPath) as! ClinicCell
         
-        if let clinic: [String : AnyObject]? = clinicData![indexPath.row] {
-            cell.clinicName.text = clinic!["name"] as? String
-            if let preferredState: Bool? = clinic!["preferred"] as? Bool{
+        guard clinicData != nil else { return cell }
+        
+        if let clinic = clinicData![indexPath.row] as [String : AnyObject]? {
+            cell.clinicName.text = clinic["name"] as? String
+            if let preferredState: Bool = clinic["preferred"] as? Bool {
                 if preferredState == true{
                     cell.preferredString.text = "Is Preferred: Yes"
                 }
